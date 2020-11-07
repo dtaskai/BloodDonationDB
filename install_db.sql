@@ -19,15 +19,15 @@ PROMPT Creating tables...
 
 PROMPT Creating constraints...
 
-@./constraint/address_constraint.sql
-@./constraint/blood_type_constraint.sql
-@./constraint/donor_constraint.sql
-@./constraint/position_constraint.sql
-@./constraint/inventory_constraint.sql
-@./constraint/blood_bank_constraint.sql
-@./constraint/staff_constraint.sql
-@./constraint/donation_constraint.sql
-@./constraint/medication_constraint.sql
-@./constraint/condition_constraint.sql
-@./constraint/donor_medication_constraint.sql
-@./constraint/donor_condition_constraint.sql
+@./constraints/address_constraint.sql
+@./constraints/blood_type_constraint.sql
+@./constraints/donor_constraint.sql
+@./constraints/position_constraint.sql
+@./constraints/inventory_constraint.sql
+@./constraints/blood_bank_constraint.sql
+@./constraints/staff_constraint.sql
+@./constraints/donation_constraint.sql
+@./constraints/medication_constraint.sql
+@./constraints/condition_constraint.sql
+@./constraints/donor_medication_constraint.sql
+@./constraints/donor_condition_constraint.sql
