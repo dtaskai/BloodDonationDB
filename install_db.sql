@@ -31,3 +31,11 @@ PROMPT Creating constraints...
 @./constraints/condition_constraint.sql
 @./constraints/donor_medication_constraint.sql
 @./constraints/donor_condition_constraint.sql
+
+PROMPT Filling tables with data...
+
+@./data/fill_db.sql
+
+PROMPT Creating views...
+
+@./views/age_groups.sql
