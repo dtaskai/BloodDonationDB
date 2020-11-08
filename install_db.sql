@@ -8,7 +8,6 @@ PROMPT Creating tables...
 @./tables/address.sql
 @./tables/blood_type.sql
 @./tables/position.sql
-@./tables/inventory.sql
 @./tables/blood_bank.sql
 @./tables/staff.sql
 @./tables/donation.sql
@@ -23,7 +22,6 @@ PROMPT Creating constraints...
 @./constraints/blood_type_constraint.sql
 @./constraints/donor_constraint.sql
 @./constraints/position_constraint.sql
-@./constraints/inventory_constraint.sql
 @./constraints/blood_bank_constraint.sql
 @./constraints/staff_constraint.sql
 @./constraints/donation_constraint.sql
