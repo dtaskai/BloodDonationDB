@@ -1,9 +1,9 @@
 CREATE TABLE donation(
-    donation_id INT,
+    donation_id NUMBER,
     donation_date DATE NOT NULL,
     other_details VARCHAR2(100),
-    donor_id INT,
-    staff_id INT,
-    blood_bank_id INT,
+    donor_id NUMBER,
+    staff_id NUMBER,
+    blood_bank_id NUMBER,
     used DATE
 );

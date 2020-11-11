@@ -1,5 +1,5 @@
 CREATE TABLE donor_medication(
-    medication_id INT,
-    donor_id INT,
+    medication_id NUMBER,
+    donor_id NUMBER,
     other_details VARCHAR2(100)
 );

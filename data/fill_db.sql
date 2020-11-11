@@ -30,6 +30,9 @@ VALUES(9, 7521, 'Kaposmérő', 'Eötvös út',46);
 INSERT INTO address(address_id, zip_code, city, street, house_number)
 VALUES(10, 7521, 'Kaposújlak', 'Bécsi utca',27);
 
+INSERT INTO address(address_id, zip_code, city, street, house_number)
+VALUES(11, 7521, 'Kaposújlak', 'Csokonai utca',9);
+
 --Adding medications
 
 INSERT INTO medication(medication_id, name)
@@ -161,5 +164,10 @@ VALUES(5,'Erős','Katalin',TO_DATE('1976/1/27','yyyy/mm/dd'),9,2,1);
 
 INSERT INTO staff(staff_id,first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
 VALUES(6, 'Donko','Erzsőbet',TO_DATE('1986/2/1','yyyy/mm/dd'),10,4,1);
+
+--Adding donors
+
+INSERT INTO donor(donor_id, first_name, last_name, gender, phone_number, can_donate, address_id, blood_type_id, birth_date,last_donation) 
+VALUES (1, 'Kovács','Kinga','F','06409231525','N',11,2,TO_DATE('1997/5/2','yyyy/mm/dd'),TO_DATE('2020/11/10','yyyy/mm/dd');
 
 COMMIT;
