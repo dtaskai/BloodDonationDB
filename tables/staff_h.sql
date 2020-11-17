@@ -1,8 +1,8 @@
-CREATE TABLE staff(
+CREATE TABLE staff_h(
     staff_id NUMBER,
-    first_name VARCHAR2(50) NOT NULL,
-    last_name VARCHAR2(50) NOT NULL,
-    birth_date DATE NOT NULL,
+    first_name VARCHAR2(50),
+    last_name VARCHAR2(50),
+    birth_date DATE,
     address_id NUMBER,
     blood_bank_id NUMBER,
     position_id NUMBER,

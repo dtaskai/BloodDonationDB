@@ -1,0 +1,1 @@
+CREATE SEQUENCE staff_seq;

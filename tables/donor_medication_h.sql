@@ -1,6 +1,7 @@
-CREATE TABLE blood_type(
-    blood_type_id VARCHAR2(3) UNIQUE NOT NULL,
-    name VARCHAR2(15) NOT NULL,
+CREATE TABLE donor_medication_h(
+    medication_id NUMBER,
+    donor_id NUMBER,
+    other_details VARCHAR2(100),
     mod_user VARCHAR2(300),
     created_on    TIMESTAMP(6),
     last_mod      timestamp(6),

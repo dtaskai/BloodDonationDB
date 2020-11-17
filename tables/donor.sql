@@ -7,6 +7,11 @@ CREATE TABLE donor (
     can_donate VARCHAR2(1) NOT NULL,
     last_donation DATE,
     address_id NUMBER NOT NULL,
-    blood_type_id NUMBER NOT NULL,
-    birth_date DATE NOT NULL
+    blood_type_id VARCHAR2(3) NOT NULL,
+    birth_date DATE NOT NULL,
+    mod_user VARCHAR2(300),
+    created_on    TIMESTAMP(6),
+    last_mod      timestamp(6),
+    dml_flag	    varchar2(1),
+    version	      number
 );

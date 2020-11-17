@@ -1,6 +1,6 @@
-CREATE TABLE blood_type(
-    blood_type_id VARCHAR2(3) UNIQUE NOT NULL,
-    name VARCHAR2(15) NOT NULL,
+CREATE TABLE condition_h(
+    condition_id NUMBER,
+    name VARCHAR2(50),
     mod_user VARCHAR2(300),
     created_on    TIMESTAMP(6),
     last_mod      timestamp(6),

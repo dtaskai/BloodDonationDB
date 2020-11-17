@@ -1,0 +1,1 @@
+CREATE SEQUENCE blood_bank_seq;

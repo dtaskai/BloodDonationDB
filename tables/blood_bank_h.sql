@@ -1,11 +1,9 @@
-CREATE TABLE donation(
-    donation_id NUMBER,
-    donation_date DATE NOT NULL,
-    other_details VARCHAR2(100),
-    donor_id NUMBER,
-    staff_id NUMBER,
+CREATE TABLE blood_bank_h(
     blood_bank_id NUMBER,
-    used DATE,
+    phone_number VARCHAR2(30),
+    email VARCHAR2(40),
+    comments VARCHAR2(100),
+    address_id NUMBER,
     mod_user VARCHAR2(300),
     created_on    TIMESTAMP(6),
     last_mod      timestamp(6),

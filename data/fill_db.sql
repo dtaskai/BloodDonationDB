@@ -1,37 +1,37 @@
 --Adding addresses
 
-INSERT INTO address(address_id, zip_code, city, street, house_number) 
-VALUES(1, 7400, 'Kaposvár', 'Noszlopy utca', 11);
+INSERT INTO address(zip_code, city, street, house_number) 
+VALUES(7400, 'Kaposvár', 'Noszlopy utca', 11);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number) 
-VALUES(2, 1105, 'Budapest', 'Csabai kapu', 31);
+INSERT INTO address(zip_code, city, street, house_number) 
+VALUES(1105, 'Budapest', 'Csabai kapu', 31);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number) 
-VALUES(3, 8931, 'Vöckönd', 'Csavargyár u.', 51);
+INSERT INTO address(zip_code, city, street, house_number) 
+VALUES(8931, 'Vöckönd', 'Csavargyár u.', 51);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number) 
-VALUES(4, 4734, 'Szamosújlak', 'Bem rakpart', 83);
+INSERT INTO address(zip_code, city, street, house_number) 
+VALUES(4734, 'Szamosújlak', 'Bem rakpart', 83);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number)
-VALUES(5, 1153, 'Budapest', 'Kis Diófa u.', 10);
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(1153, 'Budapest', 'Kis Diófa u.', 10);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number)
-VALUES(6, 1153, 'Budapest', 'Árpád fejedelem útja', 58);
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(1153, 'Budapest', 'Árpád fejedelem útja', 58);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number)
-VALUES(7, 1014, 'Budapest', 'Csabai kapu', 26);
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(1014, 'Budapest', 'Csabai kapu', 26);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number)
-VALUES(8, 7400, 'Kaposvár', 'Szilágyi Erzsébet fasor', 52);
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(7400, 'Kaposvár', 'Szilágyi Erzsébet fasor', 52);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number)
-VALUES(9, 7521, 'Kaposmérő', 'Eötvös út',46);
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(7521, 'Kaposmérő', 'Eötvös út',46);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number)
-VALUES(10, 7521, 'Kaposújlak', 'Bécsi utca',27);
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(7521, 'Kaposújlak', 'Bécsi utca',27);
 
-INSERT INTO address(address_id, zip_code, city, street, house_number)
-VALUES(11, 7521, 'Kaposújlak', 'Csokonai utca',9);
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(7521, 'Kaposújlak', 'Csokonai utca',9);
 
 --Adding medications
 
@@ -107,28 +107,28 @@ VALUES(5,'Medical manager');
 --Adding blood types
 
 INSERT INTO blood_type(blood_type_id, name)
-VALUES(1,'A+');
+VALUES('A+','A Rh pozitív');
 
 INSERT INTO blood_type(blood_type_id, name)
-VALUES(2,'A-');
+VALUES('A-','A Rh negatív');
 
 INSERT INTO blood_type(blood_type_id, name)
-VALUES(3,'B+');
+VALUES('B+','B Rh pozitív');
 
 INSERT INTO blood_type(blood_type_id, name)
-VALUES(4,'B-');
+VALUES('B-','B Rh negatív');
 
 INSERT INTO blood_type(blood_type_id, name)
-VALUES(5, '0+');
+VALUES('0+', '0 Rh pozitív');
 
 INSERT INTO blood_type(blood_type_id, name)
-VALUES(6,'0-');
+VALUES('0-','0 Rh negatív');
 
 INSERT INTO blood_type(blood_type_id, name)
-VALUES(7,'AB+');
+VALUES('AB+','AB Rh pozitív');
 
 INSERT INTO blood_type(blood_type_id, name)
-VALUES(8,'AB-');
+VALUES('AB-','AB Rh negatív');
 
 --Adding blood banks
 
@@ -166,8 +166,5 @@ INSERT INTO staff(staff_id,first_name,last_name,birth_date,address_id,position_i
 VALUES(6, 'Donko','Erzsőbet',TO_DATE('1986/2/1','yyyy/mm/dd'),10,4,1);
 
 --Adding donors
-
-INSERT INTO donor(donor_id, first_name, last_name, gender, phone_number, can_donate, address_id, blood_type_id, birth_date,last_donation) 
-VALUES (1, 'Kovács','Kinga','F','06409231525','N',11,2,TO_DATE('1997/5/2','yyyy/mm/dd'),TO_DATE('2020/11/10','yyyy/mm/dd');
 
 COMMIT;

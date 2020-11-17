@@ -16,10 +16,23 @@ PROMPT Creating tables...
 @./tables/donor_medication.sql
 @./tables/donor_condition.sql
 
+PROMPT Creating history tables...
+
+@./tables/donor_h.sql
+@./tables/address_h.sql
+@./tables/blood_type_h.sql
+@./tables/position_h.sql
+@./tables/blood_bank_h.sql
+@./tables/staff_h.sql
+@./tables/donation_h.sql
+@./tables/medication_h.sql
+@./tables/condition_h.sql
+@./tables/donor_medication_h.sql
+@./tables/donor_condition_h.sql
+
 PROMPT Creating constraints...
 
 @./constraints/address_constraint.sql
-@./constraints/blood_type_constraint.sql
 @./constraints/donor_constraint.sql
 @./constraints/position_constraint.sql
 @./constraints/blood_bank_constraint.sql
@@ -30,9 +43,20 @@ PROMPT Creating constraints...
 @./constraints/donor_medication_constraint.sql
 @./constraints/donor_condition_constraint.sql
 
-PROMPT Filling tables with data...
+PROMPT Creating sequences...
 
-@./data/fill_db.sql
+@./sequences/address_seq.sql
+@./sequences/blood_bank_seq.sql
+@./sequences/condition_seq.sql
+@./sequences/donation_seq.sql
+@./sequences/donor_seq.sql
+@./sequences/medication_seq.sql
+@./sequences/position_seq.sql
+@./sequences/staff_seq.sql
+
+PROMPT Creating triggers...
+
+@./triggers/address_trg.sql
 
 PROMPT Creating views...
 
@@ -42,3 +66,7 @@ PROMPT Creating views...
 PROMPT Creating procedures...
 
 @./procedures/can_donate.sql
+
+PROMPT Filling tables with data...
+
+@./data/fill_db.sql

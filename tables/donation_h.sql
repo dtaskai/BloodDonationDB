@@ -1,7 +1,11 @@
-CREATE TABLE donor_medication(
-    medication_id NUMBER,
-    donor_id NUMBER,
+CREATE TABLE donation_h(
+    donation_id NUMBER,
+    donation_date DATE,
     other_details VARCHAR2(100),
+    donor_id NUMBER,
+    staff_id NUMBER,
+    blood_bank_id NUMBER,
+    used DATE,
     mod_user VARCHAR2(300),
     created_on    TIMESTAMP(6),
     last_mod      timestamp(6),
