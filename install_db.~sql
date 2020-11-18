@@ -57,11 +57,6 @@ PROMPT Creating sequences...
 PROMPT Creating triggers...
 
 @./triggers/address_trg.sql
-@./triggers/address_h_trg.sql
-@./triggers/blood_bank_trq.sql
-@./triggers/blood_bank_h_trg.sql
-@./triggers/staff_trg.sql
-@./triggers/staff_h_trg.sql
 
 PROMPT Creating views...
 
