@@ -53,13 +53,32 @@ PROMPT Creating sequences...
 @./sequences/medication_seq.sql
 @./sequences/position_seq.sql
 @./sequences/staff_seq.sql
+@./sequences/blood_type_seq.sql
+@./sequences/donor_medication_seq.sql
+@./sequences/donor_condition_seq.sql
 
 PROMPT Creating triggers...
 
 @./triggers/address_trg.sql
 @./triggers/address_h_trg.sql
-@./triggers/blood_bank_trq.sql
+@./triggers/blood_bank_trg.sql
 @./triggers/blood_bank_h_trg.sql
+@./triggers/blood_type_trg.sql
+@./triggers/blood_type_h_trg.sql
+@./triggers/condition_trg.sql
+@./triggers/condition_h_trg.sql
+@./triggers/donation_trg.sql
+@./triggers/donation_h_trg.sql
+@./triggers/donor_condition_trg.sql
+@./triggers/donor_condition_h_trg.sql
+@./triggers/donor_medication_trg.sql
+@./triggers/donor_medication_h_trg.sql
+@./triggers/donor_trg.sql
+@./triggers/donor_h_trg.sql
+@./triggers/medication_trg.sql
+@./triggers/medication_h_trg.sql
+@./triggers/position_trg.sql
+@./triggers/position_h_trg.sql
 @./triggers/staff_trg.sql
 @./triggers/staff_h_trg.sql
 
@@ -70,7 +89,14 @@ PROMPT Creating views...
 
 PROMPT Creating procedures...
 
-@./procedures/can_donate.sql
+--@./procedures/can_donate.sql
+@./procedures/add_address_prc.sql
+@./procedures/add_blood_bank_prc.sql
+@./procedures/add_donation_prc.sql
+@./procedures/add_donor_condition_prc.sql
+@./procedures/add_donor_medication_prc.sql
+@./procedures/add_donor_prc.sql
+@./procedures/add_staff_prc.sql
 
 PROMPT Filling tables with data...
 

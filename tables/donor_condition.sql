@@ -6,5 +6,6 @@ CREATE TABLE donor_condition(
     created_on    TIMESTAMP(6),
     last_mod      timestamp(6),
     dml_flag	    varchar2(1),
-    version	      number
+    version	      number,
+    id NUMBER UNIQUE
 );

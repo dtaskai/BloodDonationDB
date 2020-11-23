@@ -1,0 +1,1 @@
+CREATE SEQUENCE blood_type_seq;

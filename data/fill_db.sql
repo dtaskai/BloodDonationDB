@@ -35,74 +35,74 @@ VALUES(7521, 'Kaposújlak', 'Csokonai utca',9);
 
 --Adding medications
 
-INSERT INTO medication(medication_id, name)
-VALUES(1,'kolekalciferol');
+INSERT INTO medication(name)
+VALUES('kolekalciferol');
 
-INSERT INTO medication(medication_id, name)
-VALUES(2,'azitromicin ');
+INSERT INTO medication(name)
+VALUES('azitromicin ');
 
-INSERT INTO medication(medication_id, name)
-VALUES(3,'acetilszalicilsav');
+INSERT INTO medication(name)
+VALUES('acetilszalicilsav');
 
-INSERT INTO medication(medication_id, name)
-VALUES(4,'pantoprazol');
+INSERT INTO medication(name)
+VALUES('pantoprazol');
 
-INSERT INTO medication(medication_id, name)
-VALUES(5,'nebivolol');
+INSERT INTO medication(name)
+VALUES('nebivolol');
 
-INSERT INTO medication(medication_id, name)
-VALUES(6,'allopurinol');
+INSERT INTO medication(name)
+VALUES('allopurinol');
 
-INSERT INTO medication(medication_id, name)
-VALUES(7,'rosuvastatin');
+INSERT INTO medication(name)
+VALUES('rosuvastatin');
 
-INSERT INTO medication(medication_id, name)
-VALUES(8,'amlodipin');
+INSERT INTO medication(name)
+VALUES('amlodipin');
 
-INSERT INTO medication(medication_id, name)
-VALUES(9,'famotidin');
+INSERT INTO medication(name)
+VALUES('famotidin');
 
-INSERT INTO medication(medication_id, name)
-VALUES(10,'levofloxacin');
+INSERT INTO medication(name)
+VALUES('levofloxacin');
 
 --Adding conditions
-INSERT INTO condition(condition_id, name)
-VALUES(1, 'elhízás');
+INSERT INTO condition(name)
+VALUES('elhízás');
 
-INSERT INTO condition(condition_id, name)
-VALUES(2, 'ételallergia');
+INSERT INTO condition(name)
+VALUES('ételallergia');
 
-INSERT INTO condition(condition_id, name)
-VALUES(3, 'rövidlátás');
+INSERT INTO condition(name)
+VALUES('rövidlátás');
 
-INSERT INTO condition(condition_id, name)
-VALUES(4, 'vashiány');
+INSERT INTO condition(name)
+VALUES('vashiány');
 
-INSERT INTO condition(condition_id, name)
-VALUES(5, 'prosztata problémák');
+INSERT INTO condition(name)
+VALUES('prosztata problémák');
 
-INSERT INTO condition(condition_id, name)
-VALUES(6, 'köldöksérv');
+INSERT INTO condition(name)
+VALUES('köldöksérv');
 
-INSERT INTO condition(condition_id, name)
-VALUES(7, 'cukorbetegség');
+INSERT INTO condition(name)
+VALUES('cukorbetegség');
 
 --Adding positions
 
-INSERT INTO position(position_id, name)
-VALUES(1,'Nurse');
+INSERT INTO position(name)
+VALUES('Nurse');
 
-INSERT INTO position(position_id, name)
-VALUES(2,'Head nurse');
+INSERT INTO position(name)
+VALUES('Head nurse');
 
-INSERT INTO position(position_id, name)
-VALUES(3,'Medical assistant');
+INSERT INTO position(name)
+VALUES('Medical assistant');
 
-INSERT INTO position(position_id, name)
-VALUES(4,'Physician');
+INSERT INTO position(name)
+VALUES('Physician');
 
-INSERT INTO position(position_id, name)
-VALUES(5,'Medical manager');
+INSERT INTO position(name)
+VALUES('Medical manager');
 
 --Adding blood types
 
@@ -132,38 +132,38 @@ VALUES('AB-','AB Rh negatív');
 
 --Adding blood banks
 
-INSERT INTO blood_bank(blood_bank_id,phone_number,email,address_id)
-VALUES(1,'06703246323','bd-kaposvar@bdnw.hu',1);
+INSERT INTO blood_bank(phone_number,email,address_id)
+VALUES('06703246323','bd-kaposvar@bdnw.hu',1);
 
-INSERT INTO blood_bank(blood_bank_id,phone_number,email,address_id)
-VALUES(2,'06703244323','bd-budapest@bdnw.hu',2);
+INSERT INTO blood_bank(phone_number,email,address_id)
+VALUES('06703244323','bd-budapest@bdnw.hu',2);
 
-INSERT INTO blood_bank(blood_bank_id,phone_number,email,address_id)
-VALUES(3,'06703241323','bd-vockond@bdnw.hu',3);
+INSERT INTO blood_bank(phone_number,email,address_id)
+VALUES('06703241323','bd-vockond@bdnw.hu',3);
 
-INSERT INTO blood_bank(blood_bank_id,phone_number,email,address_id)
-VALUES(4,'06703211323','bd-szamosujlak@bdnw.hu',4);
+INSERT INTO blood_bank(phone_number,email,address_id)
+VALUES('06703211323','bd-szamosujlak@bdnw.hu',4);
 
 
 --Adding staff members
 
-INSERT INTO staff(staff_id,first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
-VALUES(1,'Kurucz','Örs',TO_DATE('1980/4/6','yyyy/mm/dd'),5,1,2);
+INSERT INTO staff(first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
+VALUES('Kurucz','Örs',TO_DATE('1980/4/6','yyyy/mm/dd'),5,1,2);
 
-INSERT INTO staff(staff_id,first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
-VALUES(2,'Gyarmaty','Pázmán',TO_DATE('1989/12/3','yyyy/mm/dd'),6,2,2);
+INSERT INTO staff(first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
+VALUES('Gyarmaty','Pázmán',TO_DATE('1989/12/3','yyyy/mm/dd'),6,2,2);
 
-INSERT INTO staff(staff_id,first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
-VALUES(3,'Kádár','Szalyk',TO_DATE('1972/6/7','yyyy/mm/dd'),7,3,2);
+INSERT INTO staff(first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
+VALUES('Kádár','Szalyk',TO_DATE('1972/6/7','yyyy/mm/dd'),7,3,2);
 
-INSERT INTO staff(staff_id,first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
-VALUES(4,'Szőllőssy','Barbara',TO_DATE('1955/5/4','yyyy/mm/dd'),8,1,1);
+INSERT INTO staff(first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
+VALUES('Szőllőssy','Barbara',TO_DATE('1955/5/4','yyyy/mm/dd'),8,1,1);
 
-INSERT INTO staff(staff_id,first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
-VALUES(5,'Erős','Katalin',TO_DATE('1976/1/27','yyyy/mm/dd'),9,2,1);
+INSERT INTO staff(first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
+VALUES('Erős','Katalin',TO_DATE('1976/1/27','yyyy/mm/dd'),9,2,1);
 
-INSERT INTO staff(staff_id,first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
-VALUES(6, 'Donko','Erzsőbet',TO_DATE('1986/2/1','yyyy/mm/dd'),10,4,1);
+INSERT INTO staff(first_name,last_name,birth_date,address_id,position_id,blood_bank_id)
+VALUES('Donko','Erzsőbet',TO_DATE('1986/2/1','yyyy/mm/dd'),10,4,1);
 
 --Adding donors
 
