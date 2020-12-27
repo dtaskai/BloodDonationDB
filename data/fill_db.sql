@@ -33,6 +33,22 @@ VALUES(7521, 'Kaposújlak', 'Bécsi utca',27);
 INSERT INTO address(zip_code, city, street, house_number)
 VALUES(7521, 'Kaposújlak', 'Csokonai utca',9);
 
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(3125, 'Szilaspogony', 'Apáczai Csere János utca',24);
+
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(8700, 'Boronka', 'Nánási út',16);
+
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(9022, 'Győr', 'Bécsi utca', 97);
+
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(8409, 'Úrkút', 'Izabella utca', 75);
+
+INSERT INTO address(zip_code, city, street, house_number)
+VALUES(7841, 'Sámod', 'Agip utca', 62);
+
+
 --Adding medications
 
 INSERT INTO medication(name)
@@ -166,5 +182,43 @@ INSERT INTO staff(first_name,last_name,birth_date,address_id,position_id,blood_b
 VALUES('Donko','Erzsőbet',TO_DATE('1986/2/1','yyyy/mm/dd'),10,4,1);
 
 --Adding donors
+
+INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
+VALUES('Siposs', 'Donát', 'F', '06802020527',11,'A+',TO_DATE('1996-03-27','YYYY-MM-DD'));
+
+INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
+VALUES('Sági', 'Márk', 'F', '0632502886', 12, 'AB+', TO_DATE('1937-07-17','YYYY-MM-DD'));
+
+INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
+VALUES('Gombos', 'Ramóna', 'N', '06703546640', 13, '0-', TO_DATE('1936-01-22','YYYY-MM-DD'));
+
+INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
+VALUES('Földessi', 'Markus', 'F', '0696394452', 14, '0+', TO_DATE('1935-07-30','YYYY-MM-DD'));
+
+INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
+VALUES('Polyák', 'Katalin', 'N','0688773447', 15, 'A-', TO_DATE('2001-05-14','YYYY-MM-DD'));
+
+INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
+VALUES('Gyenis', 'Dorka', 'N','0673337584', 16, 'B+', TO_DATE('1972-03-15','YYYY-MM-DD'));
+
+--Adding donations
+
+INSERT INTO donation(donor_id, staff_id, blood_bank_id) 
+VALUES(1,1,1);
+
+INSERT INTO donation(donation_date,donor_id, staff_id, blood_bank_id, used)
+VALUES(TO_DATE('2020-10-25','YYYY-MM-DD'), 2, 3, 2, TO_DATE('2020-11-10','YYYY-MM-DD'));
+
+INSERT INTO donation(donation_date,donor_id, staff_id, blood_bank_id)
+VALUES(TO_DATE('2020-07-21','YYYY-MM-DD'), 3, 4, 3);
+
+INSERT INTO donation(donation_date,donor_id, staff_id, blood_bank_id)
+VALUES(TO_DATE('2020-12-26','YYYY-MM-DD'), 4, 2, 4);
+
+INSERT INTO donation(donation_date,donor_id, staff_id, blood_bank_id)
+VALUES(TO_DATE('2020-08-11','YYYY-MM-DD'), 5, 1, 2);
+
+INSERT INTO donation(donation_date,donor_id, staff_id, blood_bank_id)
+VALUES(TO_DATE('2020-09-28','YYYY-MM-DD'), 6, 2, 2);
 
 COMMIT;

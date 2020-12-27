@@ -2,6 +2,11 @@ PROMPT Creating user...
 
 @./users/create_bd_manager.sql
 
+PROMPT Creating types...
+@./types/ty_donation.sql
+@./types/ty_donation_l.sql
+
+
 PROMPT Creating tables...
 
 @./tables/donor.sql
@@ -15,6 +20,7 @@ PROMPT Creating tables...
 @./tables/condition.sql
 @./tables/donor_medication.sql
 @./tables/donor_condition.sql
+@./tables/error_log.sql
 
 PROMPT Creating history tables...
 
@@ -29,6 +35,7 @@ PROMPT Creating history tables...
 @./tables/condition_h.sql
 @./tables/donor_medication_h.sql
 @./tables/donor_condition_h.sql
+
 
 PROMPT Creating constraints...
 
@@ -56,6 +63,11 @@ PROMPT Creating sequences...
 @./sequences/blood_type_seq.sql
 @./sequences/donor_medication_seq.sql
 @./sequences/donor_condition_seq.sql
+@./sequences/error_log_seq.sql
+
+PROMPT Creating packages...
+
+@./package/err_log_pkg.pck
 
 PROMPT Creating triggers...
 
@@ -89,7 +101,7 @@ PROMPT Creating views...
 
 PROMPT Creating procedures...
 
---@./procedures/can_donate.sql
+@./procedures/can_donate_prc.sql
 @./procedures/add_address_prc.sql
 @./procedures/add_blood_bank_prc.sql
 @./procedures/add_donation_prc.sql
@@ -97,6 +109,10 @@ PROMPT Creating procedures...
 @./procedures/add_donor_medication_prc.sql
 @./procedures/add_donor_prc.sql
 @./procedures/add_staff_prc.sql
+@./procedures/blood_type_count_prc.sql
+@./procedures/use_blood_prc.sql
+@./procedures/list_donations_by_banks_prc.sql
+
 
 PROMPT Filling tables with data...
 

@@ -1,0 +1,1 @@
+create sequence error_log_seq start with 1;

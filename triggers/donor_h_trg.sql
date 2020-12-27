@@ -16,7 +16,6 @@ BEGIN
       ,last_name
       ,gender
       ,phone_number
-      ,can_donate
       ,last_donation
       ,address_id
       ,blood_type_id
@@ -32,7 +31,6 @@ BEGIN
       ,:old.last_name
       ,:old.gender
       ,:old.phone_number
-      ,:old.can_donate
       ,:old.last_donation
       ,:old.address_id
       ,:old.blood_type_id
@@ -49,7 +47,6 @@ BEGIN
       ,last_name
       ,gender
       ,phone_number
-      ,can_donate
       ,last_donation
       ,address_id
       ,blood_type_id
@@ -65,7 +62,6 @@ BEGIN
       ,:new.last_name
       ,:new.gender
       ,:new.phone_number
-      ,:new.can_donate
       ,:new.last_donation
       ,:new.address_id
       ,:new.blood_type_id

@@ -4,7 +4,6 @@ CREATE TABLE donor_h (
     last_name VARCHAR2(50),
     gender VARCHAR2(1),
     phone_number VARCHAR2(30),
-    can_donate VARCHAR2(1),
     last_donation DATE,
     address_id NUMBER,
     blood_type_id VARCHAR2(3),

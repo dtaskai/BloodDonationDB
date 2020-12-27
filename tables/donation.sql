@@ -1,6 +1,6 @@
 CREATE TABLE donation(
     donation_id NUMBER,
-    donation_date DATE NOT NULL,
+    donation_date DATE DEFAULT SYSDATE,
     other_details VARCHAR2(100),
     donor_id NUMBER,
     staff_id NUMBER,

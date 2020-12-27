@@ -20,5 +20,9 @@ BEGIN
     ,v_blood_bank_id
     ,v_used);
 
+  UPDATE donor d
+     SET d.last_donation = v_date
+   WHERE d.donor_id = v_donor_id;
+
 END;
 /
