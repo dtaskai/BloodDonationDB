@@ -1,0 +1,2 @@
+CREATE OR REPLACE VIEW vw_all_staff_info AS
+SELECT s.staff_id, s.first_name || ' ' || s.last_name AS name, s.birth_date, a.zip_code, a.city, a.street, a.house_number, a.other_details, b.blood_bank_id, b.phone_number, b.email, b.comments  FROM staff s INNER JOIN address a ON a.address_id = s.address_id INNER JOIN blood_bank b ON b.blood_bank_id = s.blood_bank_id;

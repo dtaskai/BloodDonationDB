@@ -1,0 +1,2 @@
+CREATE OR REPLACE VIEW vw_all_blood_bank_info AS 
+SELECT b.blood_bank_id, b.phone_number, b.email, b.comments, a.zip_code, a.city, a.street, a.house_number, a.other_details FROM blood_bank b INNER JOIN address a ON a.address_id = b.address_id;
