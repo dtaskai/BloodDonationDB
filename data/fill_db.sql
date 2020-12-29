@@ -221,4 +221,38 @@ VALUES(TO_DATE('2020-08-11','YYYY-MM-DD'), 5, 1, 2);
 INSERT INTO donation(donation_date,donor_id, staff_id, blood_bank_id)
 VALUES(TO_DATE('2020-09-28','YYYY-MM-DD'), 6, 2, 2);
 
+--Adding donor conditions
+
+INSERT INTO donor_condition(donor_id, condition_id)
+VALUES(1,1);
+
+INSERT INTO donor_condition(donor_id, condition_id)
+VALUES(1,2);
+
+INSERT INTO donor_condition(donor_id, condition_id)
+VALUES(2,4);
+
+INSERT INTO donor_condition(donor_id, condition_id)
+VALUES(4,5);
+
+INSERT INTO donor_condition(donor_id, condition_id)
+VALUES(4,6);
+
+--Adding donor medications
+
+INSERT INTO donor_medication(medication_id, donor_id)
+VALUES(1,2);
+
+INSERT INTO donor_medication(medication_id, donor_id)
+VALUES(1,3);
+
+INSERT INTO donor_medication(medication_id, donor_id)
+VALUES(4,5);
+
+INSERT INTO donor_medication(medication_id, donor_id)
+VALUES(5,2);
+
+INSERT INTO donor_medication(medication_id, donor_id)
+VALUES(5,4);
+
 COMMIT;

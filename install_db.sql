@@ -5,6 +5,10 @@ PROMPT Creating user...
 PROMPT Creating types...
 @./types/ty_donation.sql
 @./types/ty_donation_l.sql
+@./types/ty_medication.sql
+@./types/ty_medication_l.sql
+@./types/ty_condition.sql
+@./types/ty_condition_l.sql
 
 
 PROMPT Creating tables...
@@ -111,7 +115,12 @@ PROMPT Creating procedures...
 @./procedures/add_staff_prc.sql
 @./procedures/blood_type_count_prc.sql
 @./procedures/use_blood_prc.sql
-@./procedures/list_donations_by_banks_prc.sql
+
+PROMPT Creating functions ...
+
+@./functions/list_donations_by_banks_prc.sql
+@./functions/list_medication_by_donor_prc.sql
+@./functions/list_condition_by_donor_prc.sql
 
 
 PROMPT Filling tables with data...
