@@ -15,6 +15,8 @@ BEGIN
   ELSE
     RAISE donation_already_used_exc;
   END IF;
+
+  COMMIT;
   
   EXCEPTION 
     WHEN no_data_found THEN

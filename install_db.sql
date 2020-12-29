@@ -102,6 +102,8 @@ PROMPT Creating views...
 
 @./views/age_groups.sql
 @./views/all_donor_info.sql
+@./views/all_staff_info.sql
+@./views/all_blood_bank_info.sql
 
 PROMPT Creating procedures...
 
