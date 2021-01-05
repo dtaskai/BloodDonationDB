@@ -16,7 +16,7 @@ BEGIN
 
   RETURN v_donations;
 
-  EXCEPTION WHEN no_data_found THEN
+  EXCEPTION WHEN others THEN
     pkg_err_log.err_log(p_err_message => dbms_utility.format_error_backtrace,
                         p_err_value   => 'v_blood_bank_id: ' || v_blood_bank_id,
                         p_api         => 'list_donations_by_banks');

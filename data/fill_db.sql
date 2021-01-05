@@ -183,11 +183,11 @@ VALUES('Donko','Erzsőbet',TO_DATE('1986/2/1','yyyy/mm/dd'),10,4,1);
 
 --Adding donors
 
-INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
-VALUES('Siposs', 'Donát', 'F', '06802020527',11,'A+',TO_DATE('1996-03-27','YYYY-MM-DD'));
+INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date, last_donation) 
+VALUES('Siposs', 'Donát', 'F', '06802020527',11,'A+',TO_DATE('1996-03-27','YYYY-MM-DD'), TO_DATE('2021-01-05', 'YYYY-MM-DD'));
 
-INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
-VALUES('Sági', 'Márk', 'F', '0632502886', 12, 'AB+', TO_DATE('1937-07-17','YYYY-MM-DD'));
+INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date, last_donation) 
+VALUES('Sági', 'Márk', 'F', '0632502886', 12, 'AB+', TO_DATE('1937-07-17','YYYY-MM-DD'), TO_DATE('2020-01-05','YYYY-MM-DD'));
 
 INSERT INTO donor(first_name, last_name, gender, phone_number, address_id, blood_type_id, birth_date) 
 VALUES('Gombos', 'Ramóna', 'N', '06703546640', 13, '0-', TO_DATE('1936-01-22','YYYY-MM-DD'));
